@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" class="stylesheet" id="theme" type="text/css" href="css/preferred.css" title="preferred">
+    <script src="scripts/jsfunctions.js"></script>
+    <script src="https://kit.fontawesome.com/9e2bc9ddf8.js" crossorigin="anonymous"></script>
+    <title>Satisfactory - News</title>
+</head>
+
+<body>
+    <!--Hidden link to skip navigation to get to main content for accessibility-->
+    <div class="bypass" id="backtotop">
+        <a href="#maincontent">Skip Navigation to Main Content</a>
+    </div>
+
+    <!--Navigation-->
+    <header class="container-fluid">
+        <nav class="row topnav">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-md-12 navContent">
+                <div class="logo"><a href="index.html">Satisfactory</a></div>
+                <ul class="menu-list">
+                    <li class="icon cancel-btn">
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li><a href="production.html">Production</a></li>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a class="active" href="news.html">News</a></li>
+                    <li><a onclick="toggleTheme()" href="#"><i class="fa-solid fa-circle-half-stroke contrast"></i></a></li>
+                    <li><a id="textsizeparent" href="#"><i class="fa-solid fa-text-height textsize"></i></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </nav>
+    </header>
+
+    <div class="topbanner">
+        <div id="slider">
+            <div class="heading">
+                <div>
+                    <h1>News</h1>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide5">
+                <div class="slide-content"></div>
+            </div>
+        </div>
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+    </div>
+
+    <main class="container-fluid" id="maincontent">
+        <div class="row">
+            <aside class="col-xxl-2 col-lg-1"></aside>
+            <!--Middle section which holds all of the main content-->
+            <div class="col-xxl-8 col-lg-10 col-md-12" id="middle-div">
+                <h2>Sign up to receive the latest news and updates</h2>
+                <div class="formcontainer">
+                    <form action="https://formsubmit.co/bfc3e012cc89aa52807c347e3fc5d5c6" method="POST">
+                    
+                        <!--Form function to use php to send email - could not get it to work - not sure if there is a limitation 
+                            where univertsity server does no allow email to be sent - therefore using above method using website called Form Submit - php file is still included for reference
+                        <form action="scripts/sendMail.php" method="post">-->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="email" class="inputElement clabel">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="someone@mail.com" required>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <label class="inputElement clabel" for="phone">Enter your phone number:</label>
+                                <input type="tel" id="phone" name="phone" pattern="+[0-9]{11}" placeholder="+00123456789">
+                            </div>
+    
+                            <div class="col-md-6">
+                                <label class="inputElement clabel" for="fname">First Name:</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <label class="inputElement clabel" for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+                            </div>
+                        </div>
+
+                        <fieldset class="inputElement">
+                            <legend class="clabel">Receive updates by:</legend>
+                            <input type="checkbox" id="emailCheckbox" name="check-email" value="Email">
+                            <label for="emailCheckbox">Email</label><br>
+                            <input type="checkbox" id="smsCheckbox" name="check-sms" value="SMS">
+                            <label for="smsCheckbox">SMS</label><br>
+                        </fieldset>
+
+                        <fieldset class="inputElement">
+                            <legend class="clabel">What has been your favourite update to Satisfactory?</legend>
+                            <input type="radio" id="update2" name="favourite-update" value="Update2">
+                            <label for="update2">Update 2</label><br>
+                            <input type="radio" id="update3" name="favourite-update" value="Update3">
+                            <label for="update3">Update 3</label><br>
+                            <input type="radio" id="update4" name="favourite-update" value="Update4">
+                            <label for="update4">Update 4</label><br>
+                            <input type="radio" id="update5" name="favourite-update" value="Update5">
+                            <label for="update5">Update 5</label><br>
+                        </fieldset>
+
+                        <fieldset class="inputElement">
+                            <legend class="clabel">On which platform do you own Satisfactory?</legend>
+                            <input type="radio" id="steam" name="platform" value="Steam">
+                            <label for="steam">Steam</label><br>
+                            <input type="radio" id="epic" name="platform" value="Epic">
+                            <label for="epic">Epic</label><br>
+                        </fieldset>
+
+                        <label class="inputElement clabel" for="txtArea">What are you most excited for in future updates?</label>
+                        <textarea id="txtArea" name="txtArea" placeholder="Write something.." style="height:200px"></textarea>
+
+                        <!--values used by Form Submit to send email-->
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_autoresponse" value="Thank you for your submission">
+                        <input type="hidden" name="_next" value="https://people.inf.elte.hu/odp6c6/satisfactory/thankyou.html">
+
+
+                        <input type="reset" id="restBtn" title="Reset all values in form." value="Reset Fields">
+                        <input type="submit" name="submit" id="submitBtn" title="Sumbit form to receive the latest news and updates."
+                            value="Submit Form">
+
+                    </form>
+                </div>
+            </div>
+            <aside class="col-xxl-2 col-lg-1"></aside>
+        </div>
+    </main>
+
+    <div class="bypass">
+        <a href="#backtotop">Skip back to top before footer</a>
+    </div>
+
+    <footer>
+        <div class="mainfooter">
+            <ul>
+                <li><a href="https://store.steampowered.com/app/526870/Satisfactory/">
+                        <p>Steam store page</p><i class="fa-brands fa-steam"></i>
+                    </a></li>
+                <li><a href="https://www.youtube.com/c/CoffeeStainStudios">
+                        <p>Coffee Stain Studios Youtube channel</p><i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                <li><a href="https://www.twitch.tv/coffeestainstudiosdevs">
+                        <p>Coffee Stain Studios Twitch channel</p><i class="fa-brands fa-twitch"></i>
+                    </a></li>
+                <li><a href="https://discord.com/invite/satisfactory">
+                        <p>Satisfactory official Discord</p><i class="fab fa-discord"></i>
+                    </a></li>
+                <li><a href="https://www.reddit.com/r/SatisfactoryGame/">
+                        <p>Satisfactory Reddit</p><i class="fa-brands fa-reddit"></i>
+                    </a></li>
+                <li><a href="https://www.instagram.com/coffee_stain_studios/?hl=en">
+                        <p>Coffee Stain Studios Instagram</p><i class="fa-brands fa-instagram"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="subfooter">
+            <p>Designed by Rendre Greyling</p>
+        </div>
+    </footer>
+
+    <div class="bypass">
+        <a href="#backtotop">Skip back to top after footer</a>
+    </div>
+</body>
+
+</html>

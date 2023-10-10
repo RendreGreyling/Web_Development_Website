@@ -1,0 +1,136 @@
+/* Goal of this css file is to set the colour of most colour elements to the preferred grey and yellow colour */
+
+.topnav {
+    background: #1b1b1b;
+}
+
+.topnav.sticky {
+    background: #1b1b1b;
+}
+
+.topnav .logo a {
+    color: #fff;
+}
+
+.menu-list li a {
+    color: #fff;
+}
+
+.contrast {
+    color: #ffc401;
+}
+
+#textsizeparent {
+    color: #fff;
+}
+
+#textsizeparent.increased {
+    color: #ffc401;
+}
+
+.heading div {
+    background-color: #252525;
+    border-color: #1b1b1b;
+}
+
+.icon {
+    color: #fff;
+}
+
+@media (max-width: 1400px) {
+    .topnav .menu-list {
+        background: #222;        
+    }
+}
+
+body {
+    background: repeating-linear-gradient(-45deg, #1b1b1b, #252525 8px, #1b1b1b 8px);
+}
+
+footer .mainfooter {
+    background-color: #1b1b1b;
+}
+
+footer .subfooter {
+    background-color: black;
+}
+
+footer ul a {
+    color: #fff;
+}
+
+footer ul i:hover {
+    color: #6DF3FF;
+}
+
+p {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #ffc401;
+}
+
+h3 {
+    color: #6DF3FF;
+}
+
+h4 {
+    color: #fff;
+}
+
+#middle-div {
+    background-color: #252525;
+}
+
+table,
+th,
+td {
+    border-color: #888;  
+}
+
+table th {
+    color: #6DF3FF;
+}
+
+table td {
+    color: #fff;
+}
+
+table caption {
+    color: #6DF3FF;
+}
+
+details summary {
+    color: #fff;
+}
+
+#geothermal-list {
+    color: #fff;
+}
+
+figcaption {
+    color: #fff;
+}
+
+hr {
+    color: #fff;
+}
+
+.external-link a {
+    background-color: #fff;
+    color: #1b1b1b;
+    border-color: #1b1b1b;
+}
+
+.external-link a:visited {
+    color: #0062f5;
+}
+
+a {
+    color: #fff;
+}

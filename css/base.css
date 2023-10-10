@@ -1,0 +1,555 @@
+/* Custom Font used throuhout website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Top Navigation customization */
+
+.navContent {
+    margin: auto;
+    padding: 0 1.875em;
+}
+
+.topnav {
+    position: fixed;
+    width: 102%;
+    z-index: 2;
+    padding: 1em 0;
+    transition: all 0.3s ease;
+}
+
+.topnav.sticky {
+    padding: 0.05em 0;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.topnav .navContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topnav .logo a {
+    font-size: 3em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.topnav .menu-list {
+    display: inline-flex;
+}
+
+.menu-list li {
+    padding-top: 0.625em;
+    list-style: none;
+}
+
+.menu-list li a {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 1.56em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: #ffc401;
+}
+
+.menu-list li a.active {
+    color: #ffc401;
+    text-decoration: underline;
+}
+
+.menu-list li a i:hover {
+    color: #ffc401;
+}
+
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 1.875em;
+    top: 1.25em;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Top banner customization */
+
+.topbanner .slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    overflow-x: hidden;
+}
+
+.topbanner {
+    position: relative;
+}
+
+.heading div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 3em;  
+    border-style: solid;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../media/thumb/banner1.png");
+}
+
+.slide2 {
+    background-image: url("../media/thumb/banner2.png");
+}
+
+.slide3 {
+    background-image: url("../media/thumb/banner3.png");
+}
+
+.slide4 {
+    background-image: url("../media/thumb/banner4.png");
+}
+
+.slide5 {
+    background-image: url("../media/thumb/banner5.png");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 25px 25px 25px 0;
+    border-color: transparent #ffc401 transparent transparent;
+    left: 0;
+    margin-left: 25px;
+}
+
+#arrow-right {
+    border-width: 25px 0 25px 25px;
+    border-color: transparent transparent transparent #ffc401;
+    right: 0;
+    margin-right: 25px;
+}
+
+/* Breakpoint for changing top navigation parameters and look on smaller viewport */
+
+@media (max-width: 1400px) {
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .topnav .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 2.5em 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .topnav.show .menu-list {
+        left: 0%;
+    }
+
+    .topnav .menu-list li {
+        margin-top: 2.8em;
+    }
+
+    .topnav .menu-list li a {
+        font-size: 1.45em;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .topnav.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+
+/* Breakpoint for mobile size where heading size changes in the top banner. */
+
+@media (max-width: 576px) {
+    .heading div {
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading h1 {
+        font-size: 2.6em;
+    }
+}
+
+/* Hidden bypass elements used for keyboard users or for people with physical or visual impairment */
+
+.bypass a {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+    width: 1px;
+    height: 1px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.bypass a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+
+/* Customization for main body elements and all text as well as sections and articles */
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.0em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.0em;
+    font-weight: 500;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    padding-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+aside {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+section {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+article {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/* Table customization */
+
+table,
+th,
+td {
+    border: 2px solid;
+}
+
+table th,
+td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table th {
+    font-size: 1em;
+}
+
+table td {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+table caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+details summary {
+    font-size: 1.2em;
+}
+
+details .table-breakdown {
+    font-size: 1em;
+}
+
+/* Media elements customization */
+
+img {
+    width: 100%;
+}
+
+.iframecontainer {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+/* External link and button customization */
+
+.purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.external-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.external-link a {
+    font-size: 1.3em;
+    font-weight: 400;
+    border-style: solid;
+    border-radius: 2em;
+    padding: 0.35em;
+}
+
+.external-link .store {
+    width: 8em;
+}
+
+.external-link .patch-notes {
+    width: 13em;
+}
+
+.external-link a:hover {
+    background-color: #ffc401;
+}
+
+a {
+    font-size: 1.2em;
+}
+
+/* Customization of footer elements */
+
+.subfooter,
+.mainfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .mainfooter {
+    width: 100%;
+    height: 5em;
+}
+
+footer .subfooter {
+    width: 100%;
+    height: 3em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline-flex;
+    margin: 0 0.8em;
+}
+
+footer ul a {
+    text-decoration: none;
+}
+
+footer a i {
+    font-size: 1.5em;
+    transition: color 0.4s ease;
+}
+
+footer ul a p {
+    visibility: hidden;
+    font-size: 0;
+    padding: 0;
+}
+
+/* Customization of all form elements */
+
+.inputElement {
+    padding-top: 1em;
+}
+
+.clabel {
+    font-size: 1.2em;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    margin-top: 0.375em;
+    margin-bottom: 1em;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #1cd161;
+    color: white;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=reset] {
+    background-color: #ff0000;
+    color: white;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1.25em;
+}
+
+/* Customization of thank you page after completing the form */
+
+#thankyou h1 {
+    font-size: 2em;
+    padding-top: 1.2em;
+    color: #ffc401;
+}
+
+#thankyou {
+    text-align: center;
+    background-color: #252525;
+    padding: 2em;
+}
+
+#thankyou p {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #fff;
+}
+
+#thankyou a {
+    color: #fff;
+}
+
+/* Blacklist to remove certain elements from displaying when printing */
+
+@media print {
+
+    header,
+    .topbanner,
+    footer,
+    .do-not-print {
+        display: none;
+    }
+}

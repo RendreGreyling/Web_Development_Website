@@ -1,0 +1,140 @@
+/* This css file contains the colours for the alternate look of the website consisting mostly of white and black for better contrast. */
+.topnav {
+    background: #fff;
+}
+
+.topnav.sticky {
+    background: #fff;
+}
+
+.topnav .logo a {
+    color: #000000;
+}
+
+
+.menu-list li a {
+    color: #000000
+}
+
+.contrast {
+    color: #000000;
+}
+
+#textsizeparent {
+    color: #000000;
+}
+
+#textsizeparent.increased {
+    color: #ffc401;
+}
+
+.heading div {
+    background-color: #fff;
+    border-color: #1b1b1b;
+}
+
+.icon {
+    color: #000000;
+}
+
+@media (max-width: 1400px) {
+    .topnav .menu-list {
+        background: #fafafa;        
+    }
+}
+
+body {
+    background: #ccc;
+}
+
+footer .mainfooter {
+    background-color: #ddd;
+}
+
+footer .subfooter {
+    background-color: black;
+}
+
+footer .subfooter p {
+    color: #fff;
+}
+
+footer ul a {
+    color: #000000;
+}
+
+footer ul i:hover {
+    color: #ffc401;
+}
+
+p {
+    color: #000000;
+}
+
+h1 {
+    color: #000000;
+}
+
+h2 {
+    color: #ffc401;
+}
+
+h3 {
+    color: #0062f5;
+}
+
+h4 {
+    color: #000000;
+}
+
+#middle-div {
+    background-color: #fff;
+}
+
+table,
+th,
+td {
+    border-color: #000000;  
+}
+
+table th {
+    color: #0062f5;
+}
+
+table td {
+    color: #000000;
+}
+
+table caption {
+    color: #0062f5;
+}
+
+details summary {
+    color: #000000;
+}
+
+#geothermal-list {
+    color: #000000;
+}
+
+figcaption {
+    color: #000000;
+}
+
+hr {
+    color: #000000;
+}
+
+.external-link a {
+    background-color: #fff;
+    color: #000000;
+    border-color: #000000;
+}
+
+.external-link a:visited {
+    color: #0011ac;
+}
+
+a {
+    color: #000000;
+}

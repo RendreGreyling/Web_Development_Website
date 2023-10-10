@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" class="stylesheet" id="theme" type="text/css" href="css/preferred.css" title="preferred">
+    <script src="scripts/jsfunctions.js"></script>
+    <script src="https://kit.fontawesome.com/9e2bc9ddf8.js" crossorigin="anonymous"></script>
+    <title>Satisfactory - Production</title>
+</head>
+
+<body>
+    <!--Hidden link to skip navigation to get to main content for accessibility-->
+    <div class="bypass" id="backtotop">
+        <a href="#maincontent">Skip Navigation to Main Content</a>
+    </div>
+
+    <!--Navigation-->
+    <header class="container-fluid">
+        <nav class="row topnav">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 col-md-12 navContent">
+                <div class="logo"><a href="index.html">Satisfactory</a></div>
+                <ul class="menu-list">
+                    <li class="icon cancel-btn">
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li><a class="active" href="production.html">Production</a></li>
+                    <li><a href="environment.html">Environment</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a onclick="toggleTheme()" href="#"><i class="fa-solid fa-circle-half-stroke contrast"></i></a></li>
+                    <li><a id="textsizeparent" href="#"><i class="fa-solid fa-text-height textsize"></i></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </nav>
+    </header>
+
+    <div class="topbanner">
+        <div id="slider">
+            <div class="heading">
+                <div>
+                    <h1>Production</h1>
+                </div>
+            </div>
+            <div class="slide slide1">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide-content"></div>
+            </div>
+            <div class="slide slide5">
+                <div class="slide-content"></div>
+            </div>
+        </div>
+        <div id="arrow-left" class="arrow"></div>
+        <div id="arrow-right" class="arrow"></div>
+    </div>
+
+    <main class="container-fluid" id="maincontent">
+
+        <div class="bypass">
+            <a href="#spaceElevator">Skip to Space Elevator</a>
+            <a href="#resourceExtractors">Skip to Resource Extractors</a>
+            <a href="#smelters">Skip to Smelters</a>
+            <a href="#manufacturers">Skip to Manufacturers</a>
+            <a href="#powerGenerators">Skip to Power Generators</a>
+        </div>
+
+        <div class="row">
+            <aside class="col-xxl-2 col-lg-1"></aside>
+            <!--Middle section which holds all of the main content-->
+            <div class="col-xxl-8 col-lg-10 col-md-12" id="middle-div">
+                <section id="spaceElevator">
+                    <h2>The Space Elevator</h2>
+                    <a href="media/spaceElevator.png" data-lightbox="image-1" data-title="Space Elevator" data-alt="Image of the Space Elevator"><img src="media/spaceElevator.png" alt="Image of the Space Elevator"></a>
+                    <div>
+                        <p>
+                            By far the largest and most impressive building in satisfactory, the Space Elevator serves
+                            one purpose and that is to send the extremely complex and resource intensive project parts
+                            into space to <b>FICSIT INC.</b> The player is required to make 3 project parts to unlock
+                            Tiers 3 and
+                            4.
+                            These old project parts are then used in more complex project parts to unlock Tier 5 and 6.
+                            The process repeats for Tier 7 and 8 however these parts might require <b>entire
+                                factories</b> and
+                            hundreds of resources per minute.
+                        </p>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="resourceExtractors">
+                    <h2>Resource Extractors</h2>
+                    <article>
+                        <h3>Miner (Mk.1, Mk.2, Mk.3)</h3>
+                        <div class="row">
+                            <div class="col-xxl-4 col-lg-6">
+                                <figure>
+                                    <a href="media/minerMK1.png" data-lightbox="image-2" data-title="Miner Mk.1" data-alt="Image of Miner Mk.1"><img src="media/thumb/minerMK1.png" alt="Image of Miner Mk.1"></a>
+                                    <figcaption>Miner Mk.1</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6">
+                                <figure>
+                                    <a href="media/minerMK2.png" data-lightbox="image-2" data-title="Miner Mk.2" data-alt="Image of Miner Mk.2"><img src="media/thumb/minerMK2.png" alt="Image of Miner Mk.2"></a>
+                                    <figcaption>Miner Mk.2</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xxl-4 col-lg-6">
+                                <figure>
+                                    <a href="media/minerMK3.png" data-lightbox="image-2" data-title="Miner Mk.3" data-alt="Image of Miner Mk.3"><img src="media/thumb/minerMK3.png" alt="Image of Miner Mk.3"></a>
+                                    <figcaption>Miner Mk.3</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-xxl-6 col-lg-6 col-md-12">
+                                <p>
+                                    Miners are used to automatically extract solid resources from resource nodes such as
+                                    iron
+                                    and copper. Extracted resources are outputted directly to connected conveyor belts.
+                                    Extraction speed is modified depending on node purity <em>(impure, normal,
+                                        pure)</em>. Mk.2 and
+                                    Mk.3 miners are upgrades which are unlocked in later tiers and increase extraction
+                                    speed.
+                                </p>
+                            </div>
+
+                            <div class="col-xxl-6 col-md-12">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>Impure Node (p/min)</th>
+                                        <th>Normal Node (p/min)</th>
+                                        <th>Pure Node (p/min)</th>
+                                        <th>Unlocks At</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Miner Mk.1</th>
+                                        <td>30</td>
+                                        <td>60</td>
+                                        <td>120</td>
+                                        <td>Tier 0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Miner Mk.2</th>
+                                        <td>60</td>
+                                        <td>120</td>
+                                        <td>240</td>
+                                        <td>Tier 4</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Miner Mk.3</th>
+                                        <td>120</td>
+                                        <td>240</td>
+                                        <td>480</td>
+                                        <td>Tier 8</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Water Extractor</h3>
+                            <a href="media/waterExtractor.png" data-lightbox="image-3" data-title="Water Extractor" data-alt="Image of the Water Extractors"><img src="media/thumb/waterExtractor.png" alt="Image of the Water Extractor"></a>
+                            <p>
+                                Extracts water from the body of water it is built on. Body of water needs to be deep
+                                enough
+                                and therefore rivers do not always suffice. Default extraction rate is
+                                <em>120m3/min</em> and
+                                allows
+                                fluids to be pumped up to <em>10 meters</em> upwards before auxiliary pumps are
+                                required.
+                            </p>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Oil Extractor</h3>
+                            <a href="media/oilExtractor.png" data-lightbox="image-4" data-title="Oil Extractor" data-alt="Image of the Oil Extractor"><img src="media/thumb/oilExtractor.png" alt="Image of the Oil Extractor"></a>
+                            <div>
+                                <p>
+                                    Can be built on Oil Nodes to extract Crude Oil. Allows for crude oil to be pumped up
+                                    to <em>10 meters</em> upwards before auxiliary pumps are required. Extraction rates
+                                    depend on node
+                                    purity <em>(Impure: 60m3/min ; Normal: 120m3/min ; Pure: 240m3/min)</em>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <article>
+                        <h3>Resource Well Pressurizer and Extractor</h3>
+                        <a href="media/resourceWell.png" data-lightbox="image-5" data-title="Resource Well Pressurizer and Extractor" data-alt="Image of the Resource Well Pressurizer and Extractor"><img src="media/thumb/resourceWell.png" alt="Image of the Resource Well Pressurizer and Extractor"></a>
+                        <div>
+                            <p>
+                                A Resource Well Pressurizer can be placed on the node of Water, Oil or Nitrogen Resource
+                                Wells. When activated, Resource Well Extractors can be placed on the pressurized
+                                satellite
+                                nodes to extract the resourcces. Extraction rates depend on the satellite node purity
+                                <em>(Impure: 30m3/min ; Normal: 60m3/min ; Pure: 120m3/min)</em>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+                <hr>
+
+                <section id="smelters">
+                    <h2>Smelters</h2>
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Smelter</h3>
+                            <a href="media/smelter.png" data-lightbox="image-6" data-title="Smelter" data-alt="Image of the Smelter"><img src="media/thumb/smelter.png" alt="Image of the Smelter"></a>
+                            <div>
+                                <p>
+                                    The smelter has a single input and output which can be automatically fed with a
+                                    conveyor
+                                    belt. Ore is fed into the smelter to be produced into ingots. Rates vary depending
+                                    on ore,
+                                    recipe and overclocks applied. Unlocks at <b>Tier 0</b>.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Foundry</h3>
+                            <a href="media/foundry.png" data-lightbox="image-7" data-title="Foundry" data-alt="Image of the Foundry"><img src="media/thumb/foundry.png" alt="Image of the Foundry"></a>
+                            <div>
+                                <p>
+                                    The foundry has two inputs and a single output which can be automatically fed with a
+                                    conveyor belt. Two different resources or ore are smelted together to produce alloy
+                                    ingots.
+                                    Rates vary depending on ore, recipe and overclocks applied. Unlocks at <b>Tier
+                                        3</b>.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="manufacturers">
+                    <h2>Manufacturers</h2>
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Constructor</h3>
+                            <a href="media/constructor.png" data-lightbox="image-8" data-title="Constructor" data-alt="Image of the Constructor"><img src="media/thumb/constructor.png" alt="Image of the Constructor"></a>
+                            <div>
+                                <p>
+                                    Constructors are the most basic manufacturing building, taking a single resource or
+                                    part
+                                    and crafting it into another part. Typically, large amounts of constructors are
+                                    needed to
+                                    make enough basic parts for later part production. Unlocks at <b>Tier 0</b>.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Assembler</h3>
+                            <a href="media/assembler.png" data-lightbox="image-9" data-title="Assembler" data-alt="Image of the Assembler"><img src="media/thumb/assembler.png" alt="Image of the Assembler"></a>
+                            <div>
+                                <p>
+                                    The assembler is a step up from the constructor by making use of two inputs and a
+                                    single
+                                    output. Two basic parts can be combined in the assembler to create a moderately
+                                    complex
+                                    part, and this will be the workhorse of the mid-game. Unlocks at<b> Tier 2</b>.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Manufacturer</h3>
+                            <a href="media/manufacturer.png" data-lightbox="image-10" data-title="Manufacturer" data-alt="Image of the Manufacturer"><img src="media/thumb/manufacturer.png" alt="Image of the Manufacturer"></a>
+                            <div>
+                                <p>
+                                    The manufacturer has four inputs and one output. Is used to craft three or four
+                                    parts into a
+                                    single complex part and it is used primarily in the late game to create all complex
+                                    parts
+                                    which do not require fluids. Unlocks at <b>Tier 5</b>.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Packager</h3>
+                            <a href="media/packager.png" data-lightbox="image-11" data-title="Packager" data-alt="Image of the Packager"><img src="media/thumb/packager.png" alt="Image of the Packager"></a>
+                            <div>
+                                <p>
+                                    The packager is used to package and unpackage fluids. It has both a conveyor belt
+                                    and
+                                    pipe input and output. The packager is used largely to package fluids into solid
+                                    plastic
+                                    containers for easier transport across large distances or elevations. Unlocks at
+                                    <b>Tier 5</b>.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Refinery</h3>
+                            <a href="media/refinery.png" data-lightbox="image-12" data-title="Refinery" data-alt="Image of the Refinery"><img src="media/thumb/refinery.png" alt="Image of the Refinery"></a>
+                            <div>
+                                <p>
+                                    The refinery is one of the most widely used buildings throughout the mid to
+                                    ultra-late game.
+                                    It has both a conveyor belt and pipe input and output. It is primarily used in the
+                                    refining
+                                    process of crude oil into other forms such as fuel, rubber and plastic, however it
+                                    is also
+                                    required in other recipes such as aluminium and getting extra resources from
+                                    resource
+                                    nodes. Unlocks at <b>Tier 5</b>.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Blender</h3>
+                            <a href="media/blender.png" data-lightbox="image-13" data-title="Blender" data-alt="Image of the Blender"><img src="media/thumb/blender.png" alt="Image of the Blender"></a>
+                            <div>
+                                <p>
+                                    The blender is used at the end of the most complex production lines. It has two
+                                    conveyor
+                                    belt inputs, two pipe inputs, one conveyor belt output and one pipe output. This
+                                    building is
+                                    used extensively in aluminium, battery, and nuclear fuel rod production. Unlocks at
+                                    <b>Tier 7</b>
+                                    and requires adequate management of fluids to ensure that systems do not back up and
+                                    stall.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <article>
+                        <h3>Particle Accelerator</h3>
+                        <a href="media/particleAccelerator.png" data-lightbox="image-14" data-title="Particle Accelerator" data-alt="Image of the Particle Accelerator"><img src="media/thumb/particleAccelerator.png" alt="Image of the Particle Accelerator"></a>
+                        <div>
+                            <p>
+                                The Particle Accelerator is at the <em>leading edge of production</em> and is used in
+                                the
+                                recycling of
+                                spent nuclear fuel rods and manufacturing of plutonium fuel rods. Has two conveyor belt
+                                inputs, one fluid input and one conveyor belt output. It uses the most power of any
+                                building
+                                in Satisfactory – up to <b>1500MW</b> which is as much as 20 blenders, the next most
+                                power
+                                intensive manufacturing building, therefore a stable power system is required. Unlocks
+                                at
+                                <b>Tier 8</b> and is expected to manufacture many of the future parts still to be added
+                                to the
+                                game.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+                <hr>
+
+                <section id="powerGenerators">
+                    <h2>Power Generators</h2>
+                    <article>
+                        <h3>Biomass Burner</h3>
+                        <a href="media/biomassBurner.png" data-lightbox="image-15" data-title="Biomass Burner" data-alt="Image of the Biomass Burner"><img src="media/thumb/biomassBurner.png" alt="Image of the Biomass Burner"></a>
+                        <div>
+                            <p>
+                                The biomass burner is the first power building and is unlocked at <b>Tier 0</b>. It
+                                burns any
+                                plant
+                                matter, such as leaves or wood which can be turned into biomass. Has no input and must
+                                therefore be handfed manually. <b>Generates 30MW</b>.
+                            </p>
+                        </div>
+                    </article>
+
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Coal Generator</h3>
+                            <a href="media/coalGenerator.png" data-lightbox="image-16" data-title="Coal Generator" data-alt="Image of the Coal Generator"><img src="media/thumb/coalGenerator.png" alt="Image of the Coal Generator"></a>
+                            <div>
+                                <p>
+                                    The Coal generator is the first automated source of power and has one conveyor belt
+                                    input
+                                    and one pipe input. Uses coal to boil water and generates <b>75MW</b> of power. Unlocks at
+                                    <b>Tier 3</b> and is the main source of power for the mid-game.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Fuel Generator</h3>
+                            <a href="media/fuelGenerator.png" data-lightbox="image-17" data-title="Fuel Generator" data-alt="Image of the Fuel Generator"><img src="media/thumb/fuelGenerator.png" alt="Image of the Fuel Generator"></a>
+                            <div>
+                                <p>
+                                    The Fuel Generator uses fuel or turbo-fuel to generate up to <b>150MW</b> of Power. Has one
+                                    pipe input for fuel. Unlocks at Tier 6 and is the main source of power in most
+                                    factories until
+                                    Nuclear Power is researched.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="row">
+                        <article class="col-md-6">
+                            <h3>Geothermal Generator</h3>
+                            <a href="media/geothermalGenerator.png" data-lightbox="image-18" data-title="Geothermal Generator" data-alt="Image of the Geothermal Generator"><img src="media/thumb/geothermalGenerator.png" alt="Image of the Geothermal Generator"></a>
+                            <div>
+                                <p>
+                                    The Geothermal Generator is built on a Geyser and is the only renewable source of
+                                    power
+                                    in the game. Power production fluctuates depending on the Geyser node placed on.
+                                    Unlocks through research in the <b>M.A.M</b>.
+                                </p>
+                                <h4>Power Production</h4>
+                                <ul id="geothermal-list">
+                                    <li>Impure 50-150 MW (100 MW average)</li>
+                                    <li>Normal 100-300 MW (200 MW average)</li>
+                                    <li>Pure 200-600 MW (400 MW average)</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <h3>Power Storage</h3>
+                            <a href="media/powerStorage.png" data-lightbox="image-19" data-title="Power Storage" data-alt="Image of the Power Storage"><img src="media/thumb/powerStorage.png" alt="Image of the Power Storage"></a>
+                            <div>
+                                <p>
+                                    The Power Storage acts like a large-scale battery. It can be connected to a power
+                                    grid to
+                                    store excess power which can later be used in cases of high consumption. Can store
+                                    <b>100MWh</b> and is paired well with Geothermal Generators to balance out the fluctuating
+                                    power output. Unlocks at <b>Tier 4</b>.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <article>
+                        <h3>Nuclear Power Plant</h3>
+                        <a href="media/nuclearPowerPlant.png" data-lightbox="image-20" data-title="Nuclear Power Plant" data-alt="Image of the Nuclear Power Plant"><img src="media/thumb/nuclearPowerPlant.png" alt="Image of the Nuclear Power Plant"></a>
+                        <div>
+                            <p>
+                                The Nuclear Power Plant is unlocked at <b>Tier 8</b> and is used to power mega-factories in the
+                                ultra-late game. Has one conveyor belt input and output as well as one pipe input. The
+                                Nuclear Power plant consumers Nuclear and Plutonium fuel rods to produce up to
+                                <b>2500MW</b>. Requires <em>300m3/min</em> of water for cooling and produces radioactive nuclear waste.
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <aside class="col-xxl-2 col-lg-1"></aside>
+        </div>
+    </main>
+
+    <div class="bypass">
+        <a href="#backtotop">Skip back to top before footer</a>
+    </div>
+
+    <footer>
+        <div class="mainfooter">
+            <ul>
+                <li><a href="https://store.steampowered.com/app/526870/Satisfactory/">
+                        <p>Steam store page</p><i class="fa-brands fa-steam"></i>
+                    </a></li>
+                <li><a href="https://www.youtube.com/c/CoffeeStainStudios">
+                        <p>Coffee Stain Studios Youtube channel</p><i class="fa-brands fa-youtube"></i>
+                    </a></li>
+                <li><a href="https://www.twitch.tv/coffeestainstudiosdevs">
+                        <p>Coffee Stain Studios Twitch channel</p><i class="fa-brands fa-twitch"></i>
+                    </a></li>
+                <li><a href="https://discord.com/invite/satisfactory">
+                        <p>Satisfactory official Discord</p><i class="fab fa-discord"></i>
+                    </a></li>
+                <li><a href="https://www.reddit.com/r/SatisfactoryGame/">
+                        <p>Satisfactory Reddit</p><i class="fa-brands fa-reddit"></i>
+                    </a></li>
+                <li><a href="https://www.instagram.com/coffee_stain_studios/?hl=en">
+                        <p>Coffee Stain Studios Instagram</p><i class="fa-brands fa-instagram"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="subfooter">
+            <p>Designed by Rendre Greyling</p>
+        </div>
+    </footer>
+
+    <div class="bypass">
+        <a href="#backtotop">Skip back to top after footer</a>
+    </div>
+
+    <!--Lightbox script by Lokesh Dhakar - Included at bottom of page as per instructions -->
+    <script src="scripts/lightbox-plus-jquery.js"></script>
+
+</body>
+
+</html>
